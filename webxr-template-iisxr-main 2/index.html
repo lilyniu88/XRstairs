@@ -21,7 +21,7 @@
         <a-scene inspector="url: https://cdn.jsdelivr.net/gh/c-frame/aframe-editor@1.7.x/dist/aframe-editor.min.js">
             <!-- Assets: the src for "MainMesh" and "sky" can be updated with your own files -->
             <a-assets>
-                <a-asset-item id="MainMesh" src="./assets/Model.glb"></a-asset-item>
+                <a-asset-item id="MainMesh" src="./assets/Model.glb?v=5168538"></a-asset-item>
                 <a-asset-item id="navmesh" src="./assets/Nav.glb"></a-asset-item>
                 <img id="sky" src="./assets/sky.jpg">
                 <img id="icon-play" src="./resources/play.png">
@@ -50,9 +50,9 @@
             <a-entity id="player"
                 movement-controls="constrainToNavMesh: true;"
                 navigator="cameraRig: #cameraRig; cameraHead: #head; collisionEntities: .collision; ignoreEntities: .clickable"
-                position="0 0 0"
-                rotation="0 0 0">
-                <a-entity id="head" camera="active: true" position="0 1 0" look-controls="pointerLockEnabled: true; reverseMouseDrag: true"></a-entity>
+                position="-61.14 -64.87 59.27"
+                rotation="0 90 0">
+                <a-entity id="head" camera="active: true" position="0 1.6 0" look-controls="pointerLockEnabled: true; reverseMouseDrag: true"></a-entity>
                 <a-entity id="leftHand"
                     hand-controls="hand: left; handModelStyle: lowPoly; color: #15ACCF"
                     teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head; button: trigger; curveShootingSpeed: 18; landingMaxAngle: 60"
